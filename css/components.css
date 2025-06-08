@@ -276,6 +276,27 @@ div.destination-card:hover {
   box-shadow: 5px 5px 10px grey;
 }
 
+div.destination-card > div.details {
+  position: absolute;
+  border-radius: 0px 0px max(11px, 1.6vw) max(11px, 1.6vw);
+  background-color: white;
+  width: max(176px, 15vw);
+  height: max(60px, 5.2vw);
+  padding: max(15px, 1.5vw) max(27px, 2.5vw);
+  bottom: 0;
+}
+
+div.destination-card div.details > div {
+  font: normal normal 500 1.125rem/1.375rem Poppins;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.destination-card div.details > p {
+  font: normal normal 500 1rem/1.1875rem Poppins;
+  margin: 20px 35px;
+}
+
 div.rome {
   background-image: url('./../img/rome.png');
   background-size: 107%;
@@ -292,27 +313,6 @@ div.europe {
   background-image: url('./../img/europre.PNG');
   background-size: 101%;
   background-position: 50% -2%;
-}
-
-div.destination-card > div.details {
-  position: absolute;
-  border-radius: 0px 0px max(11px, 1.6vw) max(11px, 1.6vw);
-  background-color: white;
-  width: max(165px, 15vw);
-  height: max(55px, 5vw);
-  padding: max(15px, 1.5vw) max(27px, 2.5vw);
-  bottom: 0;
-}
-
-div.destination-card div.details > div {
-  font: normal normal 500 1.125rem/1.375rem Poppins;
-  display: flex;
-  justify-content: space-between;
-}
-
-div.destination-card div.details > p {
-  font: normal normal 500 1rem/1.1875rem Poppins;
-  margin: 20px 35px;
 }
 
 div.destination-card2 {
@@ -630,4 +630,26 @@ footer .app > img {
   width: 6rem;
   display: inline-block;
   margin-top: 1rem;
+}
+
+.spotlight1 {
+  position: absolute;
+  overflow: hidden;
+  top: -2.25rem;
+  left: -26vw;
+  width: 33vw;
+  height: 34rem;
+  background: #D5AEE4;
+  opacity: 0.3;
+  filter: blur(3rem);
+  pointer-events: none;
+}
+
+body {
+  background: radial-gradient(
+    circle at 100% 100%,
+    rgba(213, 174, 228, 1) 0%,
+    rgba(213, 174, 228, 0.7) 1%, 
+    transparent 4%
+  );
 }
