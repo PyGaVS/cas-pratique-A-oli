@@ -24,7 +24,7 @@ div.headlines > p.tagline {
 h1 {
   margin: 12px 0;
   font: normal normal bold 5.25rem/5.5625rem Poppins;
-  letter-spacing: -3.36px;
+  letter-spacing: -0.21rem;
   color: var(--heading);
 }
 
@@ -258,16 +258,16 @@ div.destinations {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 50px;
-  padding: 20px 14vw;
+  gap: 3vw;
+  padding: 20px 12vw;
 }
 
 div.destination-card {
-  width: 314px;
-  height: 457px;
+  width: max(220px, 20vw);
+  height: max(319px, 29vw);
   position: relative;
   color: #5E6282;
-  border-radius: 24px;
+  border-radius: max(11px, 1.6vw);
   transition: 200ms;
 }
 
@@ -296,11 +296,11 @@ div.europe {
 
 div.destination-card > div.details {
   position: absolute;
-  border-radius: 0px 0px 24px 24px;
+  border-radius: 0px 0px max(11px, 1.6vw) max(11px, 1.6vw);
   background-color: white;
-  width: 244px;
-  height: 80px;
-  padding: 25px 35px;
+  width: max(165px, 15vw);
+  height: max(55px, 5vw);
+  padding: max(15px, 1.5vw) max(27px, 2.5vw);
   bottom: 0;
 }
 
@@ -346,14 +346,13 @@ div.destination-card2::after {
 
 .destination-card2 > h4 {
   font: normal normal 500 1.125rem/1.375rem Poppins;
-  letter-spacing: 0.27px;
+  letter-spacing: 0.0169rem;
   color: #080809;
   margin-left: 40px;
 }
 
 .destination-card2 > p.date, .destination-card2 > p.autor {
   font: normal normal 500 1rem/1.1875rem Poppins;
-  letter-spacing: -0.08px;
   color: #84829A;
   display: inline;
   padding-right: 2px;
@@ -394,7 +393,7 @@ div.destination-card2::after {
 
 .destination-card2 > .footer > p {
   font: normal normal 500 1rem/1.1875rem Poppins;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.02rem;
   color: #84829A;
   margin-left: 20px;
   margin-right: 140px;
@@ -424,20 +423,20 @@ div.destination-card2::after {
 
 .destination-card3 p.ongoing {
   font: normal normal 500 0.875rem/1.0625rem Poppins;
-  letter-spacing: -0.49px;
+  letter-spacing: -0.0306rem;
   color: #84829A;
 }
 
 .destination-card3 h4 {
   font: normal normal 500 1.125rem/1.375rem Poppins;
-  letter-spacing: -0.27px;
+  letter-spacing: -0.0169rem;
   margin: 6px 0 15px 0;
   color: #080809;
 }
 
 .destination-card3 p.progress {
   font: normal normal 500 0.875rem/1.0625rem Poppins;
-  letter-spacing: -0.77px;
+  letter-spacing: -0.0481rem;
 }
 
 .destination-card3 div.progress-bar {
@@ -490,14 +489,12 @@ div.comment > p {
 div.comment > h4 {
   margin: 20px 0 0 0;
   font: normal normal 600 1.125rem/1.6875rem Poppins;
-  letter-spacing: 0px;
   color: #5E6282;
 }
 
 div.comment > h5 {
   margin: 0;
   font: normal normal 500 0.875rem/1.3125rem Poppins;
-  letter-spacing: 0px;
   color: #5E6282;
 }
 
@@ -595,4 +592,42 @@ div.arrows {
 
 .holder > input.email:valid~span, .holder > input.email:focus~span {
   display: none;
+}
+
+footer .company, footer .contact, footer .more {
+  font: normal normal bold 1.3125rem/1.625rem Poppins;
+  color: #080809;
+}
+
+footer .about, footer .help, footer .airlinefees, footer .careers, 
+footer .press, footer .airline, footer .mobile, footer .affilates, footer .tips {
+  font: normal normal 500 1.125rem/1.375rem Poppins;
+  color: #5E6282;
+}
+
+footer .app {
+  font: normal normal 500 1.25rem/1.5rem Poppins;
+  color: #5E6282;
+}
+
+footer .phrase {
+  font: normal normal 500 0.8125rem/1rem Poppins;
+  color: #5E6282;
+}
+
+footer .social > a {
+  color: #080809;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-items: center;
+}
+
+footer .app > img {
+  width: 6rem;
+  display: inline-block;
+  margin-top: 1rem;
 }
