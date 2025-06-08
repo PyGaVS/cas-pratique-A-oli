@@ -1,0 +1,50 @@
+@import './components.css';
+@import './utils.css';
+@import './layout/header.css';
+@import './layout/footer.css';
+@import './layout/grid.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Montserrat&family=Poppins:ital,wght@0,500;0,700&family=Work+Sans:ital,wght@0,400;0,500;0,600&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+body, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.category h3, .top-selling h3, .easy-and-fast h3, .testimonials h3 {
+  font: normal normal 600 18px/27px Poppins;
+  color: #5E6282;
+  text-transform: uppercase;
+}
+
+.category h2, .top-selling h2, .easy-and-fast h2, .testimonials h2 {
+  margin-top: 0;
+  font: normal normal bold 50px/65px Poppins;
+  color: #14183E;
+  text-transform: capitalize;
+}
+
+@media(max-width: 1280px){
+  html{
+    font-size: 15px;
+  }
+}
+
+@media(max-width: 1080px){
+  html{
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 720px){
+  html{
+    font-size: 12px;
+  }
+}

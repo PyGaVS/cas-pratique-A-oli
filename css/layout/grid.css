@@ -1,0 +1,38 @@
+section.entry {
+  height: 900px;
+  width: 100%;
+}
+
+section.category, section.top-selling {
+  position: relative;
+  margin-top: 80px;
+}
+
+/* CENTER */
+.category h2, .category h3, .service-card h4, .top-selling h2, .top-selling h3 {
+  width: min-content;
+  white-space: nowrap;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+section.easy-and-fast, section.testimonials, section.sponsors, section.suscribe {
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 6vw;
+  padding-top: 80px;
+  gap: 4vw;
+  justify-content: center;
+  height: min-content;
+}
+
+.easy-and-fast > div.column2, .testimonials > div.column2{
+  flex: 1;
+  padding-bottom: 350px;
+  position: relative;
+}
+
+.easy-and-fast > div.column1, .testimonials > div.column1{
+  width: 40%;
+}
