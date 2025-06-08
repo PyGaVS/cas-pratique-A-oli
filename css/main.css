@@ -37,13 +37,13 @@ a {
   }
 }
 
-@media(max-width: 1080px){
+@media(max-width: 1024px){
   html{
     font-size: 14px;
   }
 }
 
-@media(max-width: 720px){
+@media(max-width: 768px){
   html{
     font-size: 12px;
   }

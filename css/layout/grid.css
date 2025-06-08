@@ -40,21 +40,69 @@ section.easy-and-fast, section.testimonials, section.sponsors, section.suscribe 
 footer {
   display: grid;
   grid-template-rows: 4rem 2rem 2rem 2rem;
-  grid-template-columns: 1fr 8rem 8rem 8rem 13rem;
+  grid-template-columns: 1fr repeat(3, 8rem) 13rem;
   grid-template-areas: 
   "jadoo company contact more social"
   "phrase about help airlinefees app"
   "phrase careers press airline app"
   ". mobile affilates tips app";
   gap: 0.3rem 4vw;
-  margin: 20vh 6vw 10vh 12vw;
+  margin: 20vh 11vw 10vh 14vw;
 }
+
+@media(max-width: 1024px){
+  footer {
+    display: grid;
+    grid-template-rows: 4rem 2rem 4rem 4rem repeat(3, 2rem);
+    grid-template-columns: 1fr repeat(3, 8rem) 5rem;
+    grid-template-areas: 
+    "jadoo jadoo . social social"
+    "phrase phrase . app app"
+    ". . . app app"
+    ". company contact more ."
+    ". about help airlinefees ."
+    ". careers press airline ."
+    ". mobile affilates tips .";
+    gap: 0.3rem 4vw;
+    margin: 20vh 11vw 10vh 14vw;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    grid-template-rows: 4rem 2rem repeat(11, 2rem) repeat(3, 4rem);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "jadoo"
+      "phrase"
+      "company"
+      "about"
+      "careers"
+      "mobile"
+      "contact"
+      "help"
+      "press"
+      "affilates"
+      "more"
+      "airlinefees"
+      "airline"
+      "tips"
+      "social"
+      "app";
+  }
+
+  footer .tips {
+    padding-bottom: 10rem;
+  }
+}
+
 
 footer .jadoo {
   grid-area: jadoo;
   background-image: url("./../../img/Jadoo2.png");
-  background-size: 10rem;
+  background-size: contain;
   background-repeat: no-repeat;
+  width: 10rem;
 }
 
 footer .company {
@@ -72,7 +120,7 @@ footer .more {
 footer .social {
   grid-area: social;
   display: flex;
-  justify-content: space-between;
+  gap: 5rem;
   padding-right: 1.5rem;
 }
 
