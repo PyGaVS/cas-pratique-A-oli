@@ -93,7 +93,6 @@ img.plane2 {
   height: 873px;
   right: 0;
   top: 0;
-  border: solid;
 }
 
 svg {
@@ -156,12 +155,13 @@ a.more > div {
   transition: 200ms;
 }
 
-a.more > div:hover {
-  background-color: #df9801;
+a.more > div:hover, .suscribe input.submit:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
   transform: rotate(3deg);
 }
 
-a.more > div:active {
+a.more > div:active, .suscribe input.submit:active {
   transform: scale(97%);
   background-color: black;
 }
@@ -543,39 +543,51 @@ div.arrows {
 
 .suscribe > div {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgba(223, 215, 249, 0.2);
   border-radius: 129px 20px 20px 20px;
-  width: 110%;
-  height: 20rem;
-  padding: 70px 10vw;
+  width: 100%;
+  max-width: 100%;
+  height: min(min-content, 20rem);
+  padding: 4rem 0;
   text-align: center;
 }
 
 .suscribe p {
   font: normal normal 600 2.0625rem/3.375rem Poppins;
   color: #5E6282;
+  margin: 1rem 10vw;
 }
 
 .suscribe form {
-  margin-top: 4rem;
+  max-width: 95%;
+  margin: 4rem 1rem 3rem 1rem;
 }
 
 .suscribe input.email {
-  width: 421px;
-  height: 68px;
-  margin: 10px;
-  border-radius: 10px;
+  width: 26rem;
+  height: 4rem;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
   border: none;
   color: #39425D;
   font: normal normal 600 0.875rem/1.0625rem Montserrat;
-  padding-left: 20px;
+  padding-left: 1.25rem;
+}
+
+@media(max-width: 480px){
+  .suscribe input.email {
+    width: 18rem;
+  }
 }
 
 .suscribe input.submit {
-  width: 180px;
-  height: 68px;
-  margin: 10px;
-  border-radius: 10px;
+  width: 11.25rem;
+  height: 4rem;
+  margin: 0.625rem;
+  border-radius: 0.625rem;
   background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
   border: none;
   font: normal normal 600 1.0625rem/1.4375rem Open Sans;
@@ -688,5 +700,19 @@ body {
   border-radius: 0px 20px 20px 0px;
   width: 100%;
   height: 100%;
-  border: solid;
+}
+
+.paper-plane {
+  position: absolute;
+  background: transparent linear-gradient(216deg, #747DEF 0%, #5E3BE1 100%);
+  color: white;
+  right: -1rem;
+  top: -1rem;
+  padding-right: 0.1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
 }

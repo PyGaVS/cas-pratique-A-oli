@@ -19,9 +19,10 @@ section.category, section.top-selling {
 
 section.easy-and-fast, section.testimonials, section.sponsors, section.suscribe {
   display: flex;
-  margin-left: 10vw;
-  margin-right: 6vw;
+  margin-left: 9vw;
+  margin-right: 7vw;
   padding-top: 80px;
+  max-width: 90%;
   gap: 4vw;
   justify-content: center;
   height: min-content;
