@@ -3,9 +3,14 @@ section.entry {
   width: 100%;
 }
 
-section.category, section.top-selling {
+section.category, section.top-selling, section.category {
   position: relative;
   margin-top: 80px;
+}
+
+section.category {
+  overflow-y: hidden;
+  padding-bottom: 2rem;
 }
 
 /* CENTER */

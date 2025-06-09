@@ -1,0 +1,45 @@
+footer .company, footer .contact, footer .more {
+  font: normal normal bold 1.3125rem/1.625rem Poppins;
+  color: #080809;
+}
+
+footer .about, footer .help, footer .airlinefees, footer .careers, 
+footer .press, footer .airline, footer .mobile, footer .affilates, footer .tips {
+  font: normal normal 500 1.125rem/1.375rem Poppins;
+  color: #5E6282;
+}
+
+footer a {
+  color: #5E6282;
+}
+
+footer a:not(.social > a):hover {
+  text-decoration: underline;
+}
+
+footer .app {
+  font: normal normal 500 1.25rem/1.5rem Poppins;
+  color: #5E6282;
+}
+
+footer .phrase {
+  font: normal normal 500 0.8125rem/1rem Poppins;
+  color: #5E6282;
+}
+
+footer .social > a {
+  color: #080809;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  display: grid;
+  place-items: center;
+}
+
+footer .app img {
+  width: 6rem;
+  display: inline-block;
+  margin-top: 1rem;
+}

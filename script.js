@@ -51,3 +51,8 @@ function scrollUp(){
   }
   return false;
 }
+
+window.addEventListener('scroll', () => {
+  const offset = window.scrollY;
+  document.querySelector('.slow-scroll').style.transform = `translateY(${offset * 0.5}px)`;
+});

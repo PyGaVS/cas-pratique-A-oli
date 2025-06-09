@@ -179,9 +179,11 @@ div.services {
 }
 
 div.service-card {
-  border-radius: 36px;
-  width: 267px;
-  height: 314px;
+  margin-top: 1rem;
+  border-radius: 2.25rem;
+  width: 16.6rem;
+  height: 19.6rem;
+  background-color: white;
 }
 
 .service-card > div {
@@ -252,6 +254,17 @@ div.service-card {
   position: absolute;
   left: 102px;
   top: 52px;
+}
+
+.orange-rect {
+  position: absolute;
+  z-index: -1;
+  top: -20rem;
+  left: 22rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  background: #DF6951;
+  border-radius: 1.875rem 0px 0.625rem 0px;
 }
 
 div.destinations {
@@ -473,12 +486,12 @@ div.step p {
 
 div.comment {
   width: 60%;
-  height: 170px;
+  height: 10.6rem;
   position: absolute;
   background-color: white;
-  padding: 20px;
-  padding-right: 80px;
-  border-radius: 10px;
+  padding: 1.25rem;
+  padding-right: 5rem;
+  border-radius: 0.625rem;
 }
 
 div.comment > p {
@@ -487,7 +500,7 @@ div.comment > p {
 }
 
 div.comment > h4 {
-  margin: 20px 0 0 0;
+  margin: 1.25rem 0 0 0;
   font: normal normal 600 1.125rem/1.6875rem Poppins;
   color: #5E6282;
 }
@@ -520,14 +533,14 @@ div.arrows {
 }
 
 .arrows .up {
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   transform: rotate(135deg);
 }
 
 .arrows .down {
-  width: 10px;
-  height: 10px;
+  width: 0.625rem;
+  height: 0.625rem;
   transform: rotate(-45deg);
 }
 
@@ -547,7 +560,7 @@ div.arrows {
   flex-direction: column;
   align-items: center;
   background: rgba(223, 215, 249, 0.2);
-  border-radius: 129px 20px 20px 20px;
+  border-radius: 8rem 1.25rem 1.25rem 1.25rem;
   width: 100%;
   max-width: 100%;
   height: min(min-content, 20rem);
@@ -612,44 +625,6 @@ div.arrows {
   display: none;
 }
 
-footer .company, footer .contact, footer .more {
-  font: normal normal bold 1.3125rem/1.625rem Poppins;
-  color: #080809;
-}
-
-footer .about, footer .help, footer .airlinefees, footer .careers, 
-footer .press, footer .airline, footer .mobile, footer .affilates, footer .tips {
-  font: normal normal 500 1.125rem/1.375rem Poppins;
-  color: #5E6282;
-}
-
-footer .app {
-  font: normal normal 500 1.25rem/1.5rem Poppins;
-  color: #5E6282;
-}
-
-footer .phrase {
-  font: normal normal 500 0.8125rem/1rem Poppins;
-  color: #5E6282;
-}
-
-footer .social > a {
-  color: #080809;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 3rem;
-  font-size: 1.2rem;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-  display: grid;
-  place-items: center;
-}
-
-footer .app > img {
-  width: 6rem;
-  display: inline-block;
-  margin-top: 1rem;
-}
-
 .spotlight1 {
   position: absolute;
   overflow: hidden;
@@ -682,7 +657,7 @@ body {
 }
 
 .ellipse-wrapper1 > svg {
-  border-radius: 129px 0px 0px 20px;
+  border-radius: 8rem 0 0 1.25rem;
   width: 100%;
   height: 100%;
 }
@@ -697,7 +672,21 @@ body {
 }
 
 .ellipse-wrapper2 > svg {
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0 1.25rem 1.25rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ellipse-wrapper3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ellipse-wrapper3 > svg {
   width: 100%;
   height: 100%;
 }
